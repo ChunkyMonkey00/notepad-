@@ -56,6 +56,8 @@ function addCaret() {
 }
 
 function hidePages() {
+  if(clearInt) clearInterval(clearInt);
+  
   var pages = document.querySelectorAll(".page");
 
   pages.forEach((page) => {
@@ -87,7 +89,7 @@ function navStore() {
 
 function navNp() {
   navTo('notepad');
-  if(!clearInt) {
+  if(!clearInt && p.acl) {
   clearInt = setInterval(() => {
     clear();
   }, p.cr);
@@ -152,6 +154,7 @@ j = journey
 j = journey index
 
 cr = clear rate
+acl = auto clear
 */
 
 var p = {
@@ -166,6 +169,7 @@ var p = {
   ji: 0,
   /* clearing */
   cr: 10000,
+  acl: false,
 }
 
 /* intervals */
