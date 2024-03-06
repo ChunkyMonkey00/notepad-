@@ -30,9 +30,9 @@ function allKeyHandler(e) {
   typing = keys.length>=1 ? true : false;
 }
 
-typer.addEventListener('keydown', callBeforeTyping);
+document.body.addEventListener('keydown', callBeforeTyping);
 
-typer.addEventListener('keyup', callAfterTyping);
+document.body.addEventListener('keyup', callAfterTyping);
 
 setInterval(function() {
   caret = !caret;
