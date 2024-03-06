@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+}
+
+.page {
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+#backdrop {
+position: absolute;
+z-index: 0;
+width: 100%;
+height: 100%;
+}
+
+#e {
+background: repeating-linear-gradient(#fae3ac, #fae3ac 15px, #b09f78 15px, #b09f78 17px);
+width: 100%;
+height: 100%;
+z-index:-1;
+}
+
+#d {
+  position:absolute;
+  left:60px;
+  top:0;
+  width: 5px;
+  height: 100%;
+  background-color: pink;
+  z-index: 1;
+}
+#d2 {
+  position:absolute;
+  left:70px;
+  top:0;
+  width: 5px;
+  height: 100%;
+  background-color: pink;
+  z-index: 1;
+}
+
+#topNav {
+  background-color: rgb(51, 51, 51);
+  border-bottom: 1px solid pink;
+  top:0;
+  left:0;
+  width:100%;
+  height:75px;
+  z-index: 105;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mcpositioner {
+  left: 75px;
+  top: 77px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#mcpn {
+  transform: translate(0, 6px);
+}
+
+#notepadInfo {
+  background-color: rgba(31, 31, 31, 0.5);
+  text-align: center;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  transform: translate(0, -7px);
+}
+
+.chill {
+  margin: 0;
+  padding: 0;
+}
+
+.mainC {
+  position: static;
+  width: calc(100% - 77px);
+  height: calc(100% - 79px);
+  border: 1px dashed gray;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.pageTitle {
+  text-align: center;
+  background-color: rgba(31, 31, 31, 0.5);
+  border-radius: 10px;
+  width: 50%;
+  transform:translate(50%);
+}
+
+.pageTitle h1, h2 {
+  margin-top:75px;
+}
+
+.pageTitle h1, h2, h3, h4, h5 {
+    color: rgb(201, 201, 201);
+}
+
+.centerThis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#typer {
+  transform: translate(0, -4px);
+  background: none;
+  height: 100%;
+  width: 100%;
+  font-size: 14.5px;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  cursor: pointer;
+  overflow-y: hidden;
+  resize: none;
+}
+
+#typer:focus {
+  cursor: default;
+}
+
+/* Button Style */
+button {
+    background-color: #eee1c4; /* Light yellow background color */
+    border: 1px solid #b4ab97; /* Thin border with darker yellow color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Cursor style */
+    font-family: 'Courier New', Courier, monospace; /* Font family */
+    font-size: 16px; /* Font size */
+    color: #000; /* Text color */
+    text-align: center; /* Text alignment */
+    position: relative; /* Positioning */
+    z-index: 106;
+}
+
+/* Hover Effect */
+button:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #b8ac91; /* Darker yellow background color on hover */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Subtle glow effect */
+}
+
+#topNav button {
+  margin: 50px;
+}
+
+#mainCStore {
+ position: static;
+ background-color: rgba(31, 31, 31, 0.4);
+ width: calc(100% - 77px);
+ height: calc(100% - 79px); /* Adjust this value based on your needs */
+ border: 1px dashed gray;
+ overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.store-item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 20px; /* Add some space between items */
+}
+
+.buy-btn {
+ margin-top: 10px; /* Add some space above the button */
+}
+
+#mainCStore h1, h2, h3, span {
+  color: white;
+}
+
+#settings {
+  background-color: rgba(21, 21, 21, 0.95);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:900;
+}
+
+#sc {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
