@@ -24,8 +24,11 @@
 <div class="mainC" id="mainCHome">
   <div class="pageTitle">
 			<h2>Objective:</h2>
-			<h3>No Russian</h3>
+			<h3 class="objective">No Russian</h3>
   </div>
+<div class="pageTitle">
+	<h3>Head to notepad to start!</h3>
+</div>
 </div>
 
 	</div>
@@ -48,7 +51,7 @@
 </div>
 <!-- to position the container -->
 <div class="mcpositioner" id="mcpn">
-<div id='notepadInfo'><h2 class="chill">Money: 0</h2><br><h2 class="chill">Clear Rate: 10s | Objective: No Russian</h2></div>
+<div id='notepadInfo'><h2 class="chill" id="npMoney">Money: 0</h2><br><h2 class="chill">Clear Rate: 10s | Objective: <span class="objective">No Russian</span></h2></div>
 <div class="mainC" id="mainCNotepad">
 <textarea id="typer">Type here to get started...</textarea>
 </div>
@@ -78,21 +81,21 @@
 <div id="mainCStore" class="mainC">
 	<!-- Store Item 1 -->
 	<div class="store-item">
-		<button class="buy-btn">Buy</button>
-		<h3>Item Name 1</h3>
-		<span>Cost: $10, Quantity: 5</span>
+		<h3>Word Booster</h3>
+		<span id="wordBoosterInfo">Cost: $10, Quantity: 0</span>
+			<button class="buy-btn" id="buyWordBooster">Buy</button>
 	</div>
 	<!-- Store Item 2 -->
 	<div class="store-item">
-		<button class="buy-btn">Buy</button>
-		<h3>Item Name 2</h3>
-		<span>Cost: $20, Quantity: 3</span>
+		<h3>Auto Clear</h3>
+		<span id="autoClearInfo">Cost: $50</span>
+			<button class="buy-btn" id="buyAutoClear">Buy</button>
 	</div>
 	<!-- Store Item 3 -->
 	<div class="store-item">
-		<button class="buy-btn">Buy</button>
-		<h3>Item Name 3</h3>
-		<span>Cost: $30, Quantity: 2</span>
+		<h3>Auto Complete</h3>
+		<span id="autoCompleteInfo">Cost: $500, Quantity: 0</span>
+			<button class="buy-btn" id="buyAutoComplete">Buy</button>
 	</div>
 </div>
 
